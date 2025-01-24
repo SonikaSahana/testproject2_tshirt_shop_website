@@ -1,53 +1,52 @@
-.product-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-  }
-  
-  .product {
-    border: 1px solid #ccc;
-    padding: 20px;
-    width: 250px;
+.product {
+    background-color: #ffe6e6; /* Light red background */
+    border: 2px solid #800000; /* Maroon border */
     border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px 0;
     text-align: left;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  .product:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
   }
   
   .product h2 {
     font-size: 1.5rem;
-    color: #0073e6;
+    color: #8B0000; /* Dark maroon */
   }
   
   .product p {
-    color: #666;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #800000;
+  }
+  
+  .product div {
+    margin-top: 10px;
   }
   
   .product button {
-    margin-top: 10px;
-    padding: 10px 15px;
-    font-size: 1rem;
-    background-color: #0073e6;
-    color: white;
+    background-color: #d2264b; /* Maroon button */
+    color:#8B0000 ; /* White text */
+    padding: 8px 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
+    margin: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    transition: background-color 0.3s;
   }
   
   .product button:hover {
-    background-color: #005bb5;
+    background-color: #b81f41; /* Darker Maroon */
   }
   
-  .product div button {
-    margin: 5px;
+  .product button:focus {
+    outline: 2px solid #ffffff; /* White focus ring */
+    outline-offset: 2px;
+  }
+  
+  .product button[aria-selected="true"],
+  .product button.active {
+    background-color: #670f36; /* Darker Maroon for selected size */
+    color: #ffffff;
+    font-weight: bold;
   }
   
