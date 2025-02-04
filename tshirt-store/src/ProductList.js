@@ -1,8 +1,12 @@
-import React from 'react';
-import Product from './Product';
-import './ProductList.css'
+// src/ProductList.js
+import React from "react";
+import Product from "./Product";
+import { useShop } from "./context/ShopContext";
+import "./ProductList.css";
 
-const ProductList = ({ products, addToCart }) => {
+const ProductList = () => {
+  const { products, addToCart } = useShop();
+
   return (
     <div className="product-list">
       {products.length === 0 ? (

@@ -1,7 +1,11 @@
-import React from 'react';
-import './Cart.css';
+// src/Cart.js
+import React from "react";
+import { useShop } from "./context/ShopContext";
+import "./Cart.css";
 
-const Cart = ({ cart, onClose, onOrder }) => {
+const Cart = () => {
+  const { cart, handleClose, handleOrder } = useShop();
+
   return (
     <div className="cart">
       <h2>Cart ({cart.length} items)</h2>
@@ -16,8 +20,8 @@ const Cart = ({ cart, onClose, onOrder }) => {
             </div>
           ))}
           <div className="cart-buttons">
-            <button onClick={onClose} className="close-btn">Close</button>
-            <button onClick={onOrder} className="order-btn">Order</button>
+            <button onClick={handleClose} className="close-btn">Close</button>
+            <button onClick={handleOrder} className="order-btn">Order</button>
           </div>
         </>
       )}

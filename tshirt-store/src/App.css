@@ -18,3 +18,13 @@ h1 {
   margin-bottom: 20px;
   color: #8B0000; /* Dark maroon */
 }
+/* Navbar Styling */
+.navbar {
+  background-color: #d2264b; /* Maroon background */
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

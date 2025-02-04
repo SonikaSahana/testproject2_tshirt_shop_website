@@ -52,4 +52,30 @@
     outline: 2px solid #ffffff; /* White focus ring */
   }
   
+  .size-checkboxes {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px; /* Spacing between checkboxes */
+    margin: 10px 0;
+  }
+  
+  .size-checkboxes p {
+    font-weight: bold;
+    color: #b81f41; /* Dark maroon */
+    margin-right: 10px;
+  }
+  
+  .size-label {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .size-checkbox {
+    margin-right: 5px;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
   
